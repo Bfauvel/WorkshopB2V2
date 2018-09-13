@@ -32,7 +32,7 @@ if (isset($_GET['category'])){
 </head>
 
 <body>
-<!-- <div id="fond_ecran" class="fond_ecran"></div> -->
+ <div id="fond_ecranss" class="fond_ecranss"></div> 
     <div class="fg">
         <?php include 'navbar.php'; ?>
         <?php 

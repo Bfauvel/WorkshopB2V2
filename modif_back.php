@@ -17,7 +17,7 @@ $creation->execute();
 var_dump($creation);
 $res = $creation->fetch();
 
-header('Location: page_accueil.php');
+header('Location: connexion.php');
  }
  else
  {

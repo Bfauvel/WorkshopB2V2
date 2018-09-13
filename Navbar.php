@@ -39,7 +39,7 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
             </form>
             <div class="disconnect">
                 <a href="home.php"><img class="home-btn" src="medias/home.png"></a>
-                <img class="disconnect-btn" src="medias/sign_out.png">
+                <a href="disconnect.php"><img class="disconnect-btn" src="medias/sign_out.png"><a/>
                 <!-- <input class="disconnect-btn" type="button" value="Déconnexion"> -->
             </div>
         </div>

@@ -28,9 +28,9 @@ if (!empty($_POST['nom']) && !empty($_POST['prenom'])) {
             print_r($creation->errorInfo());
             var_dump($creation);
             $resultat = $creation->fetch();
-
-
-             header('Location: home.php');
+            
+           
+             header('Location: connexion.php');
         }
     }
 } 

@@ -29,7 +29,7 @@ $result = $req2->fetch();
 
 $to = $email;
 $sujet = 'Oubli du mot de passe';
-$body = 'Bonjour, vous avez oublié votre mot de passe, cliquez sur le lien présent pour le réinitialiser : http://localhost/PROJET_DEVphp/projet_trans_web_dev/Workshop_B2/modif_password.php?token=' . $token . '';
+$body = 'Bonjour, vous avez oublié votre mot de passe, cliquez sur le lien présent pour le réinitialiser : http://localhost/WorkshopB2/modif_password.php?token=' . $token . '';
 
 function smtpmailer($to, $sujet, $body) {
     global $error;
