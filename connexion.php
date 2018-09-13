@@ -9,7 +9,7 @@
         <title>Connexion</title>
     </head>
     <body>
-        <div id="fond_ecran" class="fond_ecran"/>        
+        <div id="fond_ecran" class="fond_ecran"/></div>     
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <div class="fadeIn first">

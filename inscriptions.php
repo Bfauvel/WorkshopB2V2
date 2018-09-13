@@ -9,7 +9,7 @@
         <title>Stage</title>
     </head>
     <body>
-        <div id="fond_ecran" class="fond_ecran"/>
+        <div id="fond_ecran" class="fond_ecran"/></div>
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <form method="POST" action='inscription_back.php' onsubmit="return verifForm(this)">

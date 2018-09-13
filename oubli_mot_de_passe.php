@@ -7,7 +7,7 @@
         <title>Stage</title>
     </head>
     <body>
-        <div id="fond_ecran" class="fond_ecran"/>
+        <div id="fond_ecran" class="fond_ecran"/></div>
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <form method="POST" action='oubli_mot_de_passe_back.php'>

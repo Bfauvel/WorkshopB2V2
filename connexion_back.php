@@ -19,7 +19,7 @@ if ($isPasswordCorrect) {
     $_SESSION['membre'] = $resultat['idUser'];
     $_SESSION['mail'] = $mail;
     echo 'Vous êtes connecté !';
-    header('Location: page_accueil.php');
+    header('Location: home.php');
     
 }
  else {
