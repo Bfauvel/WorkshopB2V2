@@ -1,0 +1,79 @@
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    margin: 0;
+  }
+
+/* 
+----------------------------------------------------------
+LISTE
+---------------------------------------------------------- 
+*/
+
+.search_list {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 62px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.list {
+    width: 60%;
+    height: 160px;
+    padding: 16px;
+    background-color: beige;
+    border-bottom: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.category_pict {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.category_text {
+    margin:0
+}
+
+.place_name {
+    font-size: 20px;
+}
+
+.place_address {
+    margin: 0;
+}
+
+.token_score {
+    height: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.token_score_text {
+    margin: 0;
+    margin-left: 8px;
+    width: 32px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: aqua;
+    height: 100%;
+}

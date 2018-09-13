@@ -1,0 +1,23 @@
+p{
+margin-top: -15px;
+word-wrap: break-word;
+}
+
+.container{
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: EEEEEE;
+
+    text-align: left;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.NomComm{
+    font-size: 20px;
+    line-height: 0;
+    margin-top: 5px;
+}

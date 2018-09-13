@@ -1,0 +1,1 @@
+<p>Un Mail vient de vous être envoyer à l'adresse de votre compte, merci de fermer cette page.</p>
