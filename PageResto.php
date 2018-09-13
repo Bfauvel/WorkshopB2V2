@@ -16,30 +16,11 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="restaurant.css" rel="stylesheet" type="text/css"/>
         <?php include_once 'CDN.php'; ?>
-        <link href="Navbar.css" rel="stylesheet" type="text/css"/>
         <link href="PageResto.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="Navbar.css" rel="stylesheet" type="text/css"/>-->
     </head>
     <body>
-        <div class="home_header">
-            <div class="user_info">
-                <img class="profile_pict_small" src="medias/user.jpg">
-                <?php
-                $req = $db->prepare("SELECT `LastName`, `FirstName` FROM `User` WHERE idUser=$idU");
-                $req->execute();
-                $name = $req->fetchAll();
-                $nom = $name[0]['LastName'];
-                $prenom = $name[0]['FirstName'];
-                ?>
-                <p class="profile_name"><?php echo $prenom . " " . $nom ?></p>
-            </div>
-            <div class="searchbar">
-                <input class="search_bar" type="text" placeholder="Rechercher">
-                <input class="search-btn" type="submit" value="Rechercher">
-            </div>
-            <div class="disconnect">
-                <input class="disconnect-btn" type="button" value="Déconnexion">
-            </div>
-        </div>
+        <?php include 'navbar.php'; ?>
         <div class="row">
             <div class="col-md-5">
                 <?php
@@ -50,7 +31,7 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
                 ?>
                 <br>
                 <br>
-
+                <br>
             </div>
         </div>
         <h1><?php echo $nomR ?></h1>
@@ -65,7 +46,7 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
         $nbtR = $req3->fetch();
         $nbTokkensR = $nbtR[0];
         ?>
-        <p><?php echo $labelR ?> - <?php echo $nbTokkensR ?> Token</p><br>
+        <p><?php echo $labelR ?> - <?php echo $nbTokkensR ?> Token</p>
         <div class="ui horizontal list">
             <div class="item">
                 <i class="marker icon"></i>
