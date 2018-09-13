@@ -9,6 +9,11 @@ body {
 LISTE
 ---------------------------------------------------------- 
 */
+.white {
+  background-color: white;
+  width: 700px;
+  opacity: 0.9;
+}
 
 .fond_ecranss{
      position: fixed;
@@ -19,7 +24,6 @@ LISTE
     background-size: cover;
     background-position: 50% 50%;
     background-image:url(image/table.jpg);
-    opacity: 0.7;
     background-repeat:repeat;
 }
 .search_list {
@@ -37,7 +41,6 @@ LISTE
     width: 60%;
     height: 160px;
     padding: 16px;
-    background-color: beige;
     border-bottom: solid;
     border-width: 1px;
     display: flex;
@@ -45,6 +48,12 @@ LISTE
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .category_pict {

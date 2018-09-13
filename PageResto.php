@@ -1,11 +1,18 @@
 <?php
 session_start();
+if (!isset($_SESSION['membre'])){
+    header('location: connexion.php');
+}
 $idU = $_SESSION['membre'];
-$idR = $_GET['idR'];
 include 'bootstrap.php';
 include_once 'Config.php';
-
 $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Config::UTILISATEUR, Config::MOTDEPASSE);
+
+
+
+$idR = $_GET['idR'];
+
+
 ?>
 
 

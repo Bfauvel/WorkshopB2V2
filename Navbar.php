@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <?php
-
 include 'bootstrap.php';
 include_once 'Config.php';
 
@@ -11,6 +9,7 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
 <html>
     <head>
         <title>Navbar</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -43,6 +42,8 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
                 <!-- <input class="disconnect-btn" type="button" value="Déconnexion"> -->
             </div>
         </div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
     </body>
 </html>
 

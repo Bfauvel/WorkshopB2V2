@@ -1,7 +1,9 @@
 <?php
 session_start();
 $idU = $_SESSION['membre'];
-
+if (!isset($_SESSION['membre'])){
+    header('location: connexion.php');
+}
 //verif connecté
 include 'bootstrap.php';
 include_once 'Config.php';
@@ -27,12 +29,14 @@ if (isset($_GET['category'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="page_home.css" rel="stylesheet" type="text/css"/>
     <title>Home</title>
 </head>
 
 <body>
  <div id="fond_ecranss" class="fond_ecranss"></div> 
+ 
     <div class="fg">
         <?php include 'navbar.php'; ?>
         <?php 
@@ -82,6 +86,10 @@ if (isset($_GET['category'])){
                 }
                 $address = $result[$i][2] . ", " . $result[$i][3] . " " . $result[$i][4];
                 ?> 
+                           
+
+
+               <div class="white">
                 <div class="list">
                     <strong class="place_name"> <a href=<?php echo($hrefR)?>><?php echo($result[$i][1])?></a></strong>
                     <p class="place_address"><?php echo($address)?></p>
@@ -95,6 +103,8 @@ if (isset($_GET['category'])){
                         
                     </div>
                 </div>
+               </div>
+
                 <?php
             }
 
