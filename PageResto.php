@@ -14,13 +14,11 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
         <title>PageResto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="restaurant.css" rel="stylesheet" type="text/css"/>
         <?php include_once 'CDN.php'; ?>
         <link href="PageResto.css" rel="stylesheet" type="text/css"/>
-        <!--<link href="Navbar.css" rel="stylesheet" type="text/css"/>-->
     </head>
     <body>
-        <?php include 'navbar.php'; ?>
+        <?php //include 'navbar.php'; ?>
         <div class="row">
             <div class="col-md-5">
                 <?php
@@ -40,7 +38,7 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
         $req2->execute();
         $cateR = $req2->fetch();
         $labelR = $cateR[0];
-        
+
         $req3 = $db->prepare("SELECT COUNT(*) FROM avis where idR=$idR");
         $req3->execute();
         $nbtR = $req3->fetch();
@@ -298,10 +296,16 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
             $comment = $sql->fetchAll();
             $nomU = $comment[$i]['FirstName'] . " " . $comment[$i]['LastName'];
             if ($comment[$i]['Avis'] != "") {
-                echo $nomU;
-                echo '<br>';
-                echo $comment[$i]['Avis'];
-                echo'<br>';
+                ?>
+                <div class="container">
+                    <?php
+                    echo $nomU;
+                    echo '<br>';
+                    echo $comment[$i]['Avis'];
+                    echo'<br>';
+                    ?>
+                </div>
+                <?php
             }
         }
         ?>
