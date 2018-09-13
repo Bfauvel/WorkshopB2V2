@@ -1,5 +1,6 @@
 p{
 margin-top: -15px;
+word-wrap: break-word;
 }
 
 .container{
@@ -7,10 +8,16 @@ margin-top: -15px;
     margin-left: 20px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #8D8D8D;
-    width: 200px;
-    height: 50px;
+    background-color: EEEEEE;
+
     text-align: left;
     border: 1px solid #FFFFFF;
     border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.NomComm{
+    font-size: 20px;
+    line-height: 0;
+    margin-top: 5px;
 }

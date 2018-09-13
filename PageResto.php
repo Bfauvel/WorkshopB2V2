@@ -18,7 +18,7 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
         <link href="PageResto.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <?php //include 'navbar.php'; ?>
+        <?php include 'navbar.php'; ?>
         <div class="row">
             <div class="col-md-5">
                 <?php
@@ -277,8 +277,6 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
         $result = $sqb->fetchAll();
         $address = $result[0]['Adresse'] . " " . $result[0]['Code_Postal'] . " " . $result[0]['Ville'];
 
-
-        //$address = "16 Boulevard Général de Gaulle, 44200 Nantes";
         echo '<iframe width="100%" height="170" frameborder="0" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=' . str_replace(",", "", str_replace(" ", "+", $address)) . '&z=14&output=embed"></iframe>';
         ?>
 
@@ -299,7 +297,7 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
                 ?>
                 <div class="container">
                     <?php
-                    echo $nomU;
+                    echo "<div class='NomComm'> $nomU</div>" ;
                     echo '<br>';
                     echo $comment[$i]['Avis'];
                     echo'<br>';
