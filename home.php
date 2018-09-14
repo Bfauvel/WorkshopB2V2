@@ -31,7 +31,7 @@ if (isset($_GET['category'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="page_home.css" rel="stylesheet" type="text/css"/>
-    <title>Home</title>
+    <title>WeLunch - Page d'accueil</title>
 </head>
 
 <body>

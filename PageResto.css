@@ -9,7 +9,6 @@ word-wrap: break-word;
     margin-bottom: 10px;
     padding: 10px;
     background-color: EEEEEE;
-
     text-align: left;
     border: 1px solid #FFFFFF;
     border-radius: 10px;
@@ -20,4 +19,8 @@ word-wrap: break-word;
     font-size: 20px;
     line-height: 0;
     margin-top: 5px;
+}
+
+.ui horizontal list{
+    width: 100%;
 }

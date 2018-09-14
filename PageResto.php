@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['membre'])){
+if (!isset($_SESSION['membre'])) {
     header('location: connexion.php');
 }
 $idU = $_SESSION['membre'];
@@ -11,8 +11,6 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
 
 
 $idR = $_GET['idR'];
-
-
 ?>
 
 
@@ -20,7 +18,7 @@ $idR = $_GET['idR'];
 
 <html>
     <head>
-        <title>PageResto</title>
+        <title>WeLunch - Page d'accueil</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <?php include_once 'CDN.php'; ?>
@@ -54,6 +52,7 @@ $idR = $_GET['idR'];
         $nbTokkensR = $nbtR[0];
         ?>
         <p><?php echo $labelR ?> - <?php echo $nbTokkensR ?> Token</p>
+        
         <div class="ui horizontal list">
             <div class="item">
                 <i class="marker icon"></i>
@@ -63,8 +62,8 @@ $idR = $_GET['idR'];
                     $req->execute();
                     $CityR = $req->fetch();
                     $VilleR = $CityR[0];
+                    echo $VilleR
                     ?>
-                    <?php echo $VilleR ?>
                 </div>
             </div>
             <div class="item">
@@ -103,7 +102,7 @@ $idR = $_GET['idR'];
                     if ($tokken[0] == 0) {
                         ?>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                            Tokken +1
+                            Token +1
                         </button>
                         <?php
                     }
@@ -111,6 +110,8 @@ $idR = $_GET['idR'];
                 </div>
             </div>
         </div>
+        
+    
         <div class="row">
             <div class="col-md-12">
 
@@ -306,7 +307,7 @@ $idR = $_GET['idR'];
                 ?>
                 <div class="container">
                     <?php
-                    echo "<div class='NomComm'> $nomU</div>" ;
+                    echo "<div class='NomComm'> $nomU</div>";
                     echo '<br>';
                     echo $comment[$i]['Avis'];
                     echo'<br>';

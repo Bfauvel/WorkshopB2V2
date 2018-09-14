@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <!--        <script type="text/javascript" src="connection.js"></script>-->
         <?php include_once 'CDN.php'; ?>
-        <title>Connexion</title>
+        <title>WeLunch - Page de Connexion</title>
     </head>
     <body>
         <div id="fond_ecran" class="fond_ecran"/></div>     

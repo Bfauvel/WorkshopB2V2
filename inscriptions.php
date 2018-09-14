@@ -6,7 +6,7 @@
         <script type="text/javascript" src="password.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <?php include_once 'CDN.php'; ?>
-        <title>Stage</title>
+        <title>WeLunch - Page d'inscription</title>
     </head>
     <body>
         <div id="fond_ecran" class="fond_ecran"/></div>

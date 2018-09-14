@@ -31,8 +31,10 @@ $db = new PDO("mysql:host=" . Config::SERVEUR . ";dbname=" . Config::BASE, Confi
                 <input class="search-place" type="text" name="place" placeholder="Ville">
                 <select class="search-category" name="category" placeholder="Catégorie">
                     <option value="">- Catégorie -</option>
-                    <option value="Pizza">Pizza</option>
-                    <option value="Kebab">Kebab</option>
+                    <option value="Hamburgers">Hamburgers</option>
+                    <option value="Pizzeria">Pizzeria</option>
+                    <option value="Asiatique">Asiatique</option>
+                    <option value="Bar">Bar</option>
                 </select>
                 <input class="search-btn" type="submit" value="Rechercher"> <!-- Bouton de recherche -->
             </form>
